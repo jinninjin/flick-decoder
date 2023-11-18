@@ -6,7 +6,9 @@
  </head>
  <body>
     <input id="input" onblur="decode()">
-    <input type="button" onclick="reset()">
+    <input type="button" onclick="reset()" value="リセット">
+    <br>
+    ↓↓↓結果↓↓↓
     <br>
     <label id="result"></label>
  </body>
@@ -55,8 +57,9 @@
     }
 
     function reset(){
-        let elem = document.getElementById("input")
-        elem.valu = ""
+        document.getElementById("input").value = ""
+        document.getElementById("result").innerHTML = ""
+        
     }
  </script>
 </html>
