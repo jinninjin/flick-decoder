@@ -6,6 +6,7 @@
  </head>
  <body>
     <input id="input" onblur="decode()">
+    <input type="button" onclick="reset()">
     <br>
     <label id="result"></label>
  </body>
@@ -51,6 +52,11 @@
     function showResult(str){
         let elem = document.getElementById("result")
         elem.innerHTML = str
+    }
+
+    function reset(){
+        let elem = document.getElementById("input")
+        elem.valu = ""
     }
  </script>
 </html>
